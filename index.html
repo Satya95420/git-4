@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .md{
+            border: 2px solid black;
+            width: 350px;
+            height: 450px;
+            background-color: aqua;
+            text-align: center;
+            margin-top: 100px;
+            margin-left: 100px;
+    
+
+
+        }
+        .q{
+            border-radius: 55px;
+            border: 1px solid black;
+            
+            width: 250px;
+            padding: 8px;
+            background-color: antiquewhite;
+            display:inline-block;
+            font-size: 20px;
+        }
+        .p1{
+            color: brown;
+        }
+        .p2{
+            color: red;
+        }
+        .p3{
+            color:green;
+        }
+        .p4{
+            color:blue;
+        }
+        .p5{
+            color: orangered;
+        }
+        .p6{
+            color:deeppink;
+        }
+        .p7{
+            color:saddlebrown;
+        }
+        .item{
+            border: 2px solid black;
+            width: 250px;
+            padding: 20px;
+            height: 250px;
+            text-align: center;
+            background-color: rgb(102, 82, 55);
+            position: relative;
+            top: -350px;
+            left: 800px;
+            
+            
+        }
+        .md,.item{
+        
+           display: inline-block;
+        
+        }
+        #t1:checked~.item{
+            transform: none;
+        }
+        #t2:checked~.item{
+            transform: rotate(25deg);
+            transition:2s ease-in-out;
+        }
+        #t3:checked~.item{
+            transform: rotate(45deg);
+            transition:2s ease-in-out ;
+        }
+        #t4:checked~.item{
+            transform: rotateX(45deg);
+            transition: 2s ease-in-out ;
+        }
+        #t5:checked~.item{
+            transform: rotateX(100deg);
+            transition:2s ease-in-out ;
+        }
+        #t6:checked~.item{
+            transform: rotateY(45deg);
+            transition: 2s ease-in-out ;
+        }
+        #t7:checked~.item{
+            transform: rotate(360deg);
+            transition: 1s ease-in-out ;
+        }
+        input{
+            width: 20px;
+            height: 20px;
+            
+        }
+        
+
+
+
+
+        
+
+    </style>
+</head>
+<body style="background-color: rgb(234, 234, 119);position: relative;top: 40px;">
+    <div class="md"><br>
+        <input type="radio" name="item1" id="t1"/>
+        <label for="t1" class="p1 q">transform: none;</label>
+        <br><br>
+        <input type="radio" name="item1" id="t2"/>
+        <label for="t2" class="p2 q" >transform: rotate(25deg);</label>
+         <br><br>
+        <input type="radio" name="item1" id="t3"/>
+        <label for="t3" class="p3 q">transform: rotate(45deg);</label>
+        <br><br>
+        <input type="radio" name="item1" id="t4"/>
+        <label for="t4" class="p4 q">transform: rotateX(45deg);</label>
+        <br><br>
+        <input type="radio" name="item1" id="t5"/>
+        <label for="t5" class="p5 q">transform: rotateX(100deg); </label>
+        <br><br>
+        <input type="radio" name="item1" id="t6"/>
+        <label for="t6" class="p6 q">transform: rotateY(45deg);</label>
+        <br><br>
+        <input type="radio" name="item1" id="t7"/>
+        <label for="t7" class="p7 q">transform: rotate(360deg);</label>
+        <br>
+    
+    <div class="item"><i class="fa fa-android" style="font-size:208px;color:red"></i></div>
+    </div>
+</body>
+</html>
